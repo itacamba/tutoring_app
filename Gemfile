@@ -17,6 +17,7 @@ gem 'puma', '~> 4.1'
 gem 'bcrypt', '~> 3.1.7'
 gem 'omniauth'
 gem "omniauth-rails_csrf_protection"
+gem 'devise'
 gem 'omniauth-google-oauth2'
 
 # Use Active Storage variant
