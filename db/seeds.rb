@@ -8,7 +8,7 @@
 
 User.destroy_all
 Subject.destroy_all
-Session.destroy_all
+Appointment.destroy_all
 UserSubject.destroy_all
 
 u1 = User.create(name: "John Doe", email: "john@doe.com", password: "test")
@@ -21,8 +21,8 @@ s2 = Subject.create(name: "English")
 
 
 
-session1 = Session.create(tutor: u2,  student: u1, date: DateTime.new(2020,12,23,18,0,0), subject: s1)
-session2 = Session.create(tutor: u2, student: u2, date: DateTime.new(2021,10,10,15,30,0), subject: s2)
+appointment1 = Appointment.create(tutor: u2,  student: u1, date: DateTime.new(2020,12,23,18,0,0), subject: s1)
+appointment2 = Appointment.create(tutor: u2, student: u2, date: DateTime.new(2021,10,10,15,30,0), subject: s2)
 
 us1 = UserSubject.create(user: u1, subject: s1)
 us2 = UserSubject.create(user: u1, subject: s2)
